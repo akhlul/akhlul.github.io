@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>GINI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="images/style.css" rel="stylesheet" type="text/css">
+  <!-- Chota CSS Frameworks -->
+  <link rel="stylesheet" href="chota.css">
+  <!-- fullPage.js CSS -->
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.min.css" />
+  <!-- AmCharts + AmMaps CSS -->
+  <link rel="stylesheet" href="ammap.css" type="text/css">
+  <!-- noUiSlider CSS -->
+  <link rel="stylesheet" href="nouislider.min.css" type="text/css">
+  <style>
+    html body {
+      background-color: #F4F2E9;
+    }
+
+    .container {
+      width: 800px;
+      margin: auto;
+    }
+
+    .logo {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .in-square {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .has-margin {
+      margin-top: 8px;
+    }
+
+    #peta_mapdiv {
+      width: auto;
+      height: 300px;
+    }
+  </style>
+
+</head>
+
+<body>
+<div id="fullPage">
+  <!-- Front Section -->
+  <div class="section">
+
+    <div class="row container">
+      <div class="col">
+        <div class="logo-container is-text-center">
+          <img src="header.png" class="logo">
+        </div>
+        <div class="title-sub">
+          The <em>Gini index</em> or Gini coefficient is a statistical measure of distribution developed by the Italian statistician Corrado Gini in 1912. It is often used as a gauge of economic inequality, measuring income distribution or, less commonly, wealth distribution among a population.
+        </div>
+        <div class="title-sub" style="margin-top: 42px">
+          <b>Team:</b>
+          <a>Ahlul Karom</a>, <a>Panji Surya D.W.</a>, <a>Ardanes Damayanti</a>, <a>Fitri Yulianti</a>, <a>Ni Putu Beliana P.</a>, <a>Siti Rafika</a>,
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- \\ Front Section -->
+
+  <!-- Gini Indonesia Section -->
+  <div class="section">
+    <div class="row container">
+      <header class="row container">
+        <div class="col-8 is-vertical-align">
+          <h2 class="is-marginless">Indeks Gini Indonesia</h2>
+        </div>
+        <div class="col is-right">
+          <nav class="tabs">
+            <a href="#">Tahun</a>
+            <a href="#">2002-2017</a>
+          </nav>
+        </div>
+      </header>
+      <div class="col">
+        <div class="in-square">
+          <div id="peta_chartdiv" style="height: 250px;"></div>
+        </div>
+        <div class="card has-margin">
+          <header>
+            <h4>insert info here</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- \\ Gini Indonesia Section -->
+
+  <!-- Maps Section -->
+  <div class="section">
+    <header class="row container">
+      <div class="col-8 is-vertical-align">
+        <h2 class="is-marginless">Indeks Gini Indonesia per Provinsi</h2>
+      </div>
+      <div class="col is-right">
+        <nav class="tabs">
+          <a href="#">Tahun</a>
+          <a href="#" id="slider-range-value">2002</a>
+        </nav>
+      </div>
+    </header>
+    <div class="row container">
+      <div class="col">
+        <div class="in-square">
+          <div id="peta_mapdiv"></div>
+        </div>
+        <div id="slider-range" class="has-margin"></div>
+        <!-- <div id="slider-range-value"></div> -->
+        <div class="card has-margin" style="height: 125px;">
+          <header>
+            <h4>Interpretasi</h4>
+          </header>
+          <p id="peta_interpretasi"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- \\ Maps Section -->
+
+  <!-- Distribusi Pembagian Pengeluaran Desa Kota Section -->
+  <div class="section">
+    <div class="row container">
+      <header class="row container">
+        <div class="col-8 is-vertical-align">
+          <h3 class="is-marginless">Distribusi Pembagian Pengeluaran per Kapita</h2>
+        </div>
+        <div class="col is-right">
+          <nav class="tabs">
+            <a href="#">Tahun</a>
+            <a href="#">2002-2017</a>
+          </nav>
+        </div>
+      </header>
+      <div class="col">
+        <a class="button primary" id="desa-btn">Desa</a>
+        <a class="button outline" id="kota-btn">Kota</a>
+        <a class="button outline" id="desa-kota-btn">Gabungan</a>
+      </div>
+      <div class="col-12">
+        <div class="in-square">
+          <div id="deskotppk_chartdiv" style="height: 350px;"></div>
+        </div>
+        <div class="card has-margin">
+          <header>
+            <h4>insert info here</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- \\ Distribusi Pembagian Pengeluaran Indonesia Section -->
+
+</div>
+  <!-- jQuery + fullPage.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+  <!-- AmCharts -->
+  <script type="text/javascript" src="amcharts.js"></script>
+	<script type="text/javascript" src="amcharts-serial.js"></script>
+  <!-- AmMaps -->
+  <script src="ammap.js" type="text/javascript"></script>
+  <script src="ammap-themes-light.js"></script>
+  <script src="indonesiaLow.js" type="text/javascript"></script>
+  <!-- noUIslider -->
+  <script src="nouislider.min.js"></script>
+
+  <!-- yourScript -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullPage').fullpage({
+      continuousVertical: true
+    });
+  });
+  </script>
+  <script src="custom.js" charset="utf-8"></script>
+</body>
+
+</html>
