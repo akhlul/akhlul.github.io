@@ -2244,7 +2244,7 @@ AmCharts.makeChart("deskotppk_chartdiv", {
   "guides": [],
   "valueAxes": [{
     "id": "ValueAxis-1",
-    "title": "Gini Ratio"
+    "title": "Total Pendapatan"
   }],
   "allLabels": [],
   "balloon": {},
